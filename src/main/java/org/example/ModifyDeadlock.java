@@ -20,7 +20,7 @@ public class ModifyDeadlock implements Runnable {
             if (b) {
                 lockResourcesInOrder(resource1, resource2);
             } else {
-                lockResourcesInOrder(resource1, resource2); // Even when "random", **still same order**
+                lockResourcesInOrder(resource1, resource2); 
             }
         }
     }
@@ -37,7 +37,7 @@ public class ModifyDeadlock implements Runnable {
             System.out.println("[" + Thread.currentThread().getName() + "] Trying to lock resource 2.");
             synchronized (second) {
                 System.out.println("[" + Thread.currentThread().getName() + "] Locked resource 2.");
-                // Critical section
+               
             }
         }
     }
